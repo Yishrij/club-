@@ -74,6 +74,19 @@ public class Club
 */
 public ArrayList<Membership> purge(int month, int year)
 {
-purge.get month;
+if (month < 1 || month >12)
+    {
+        System.out.println("invalid month");
+            return null;
 }
+    if (year < 1990){
+        System.out.println("invalid year");
+            return null;
 }
+    ArrayList<Membership> purgeList = newArrayList<>();
+     for (Membership m : members){
+            if(m.getMonth() == month && m.getYear()=year){
+                purgeList.add(m);
+            }
+     }
+    return PurgeList
